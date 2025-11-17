@@ -160,7 +160,7 @@ document.getElementById("tbForm").addEventListener("submit", async function(e){
     phone: document.getElementById("tbPhone").value
   };
 
-  await fetch("https://script.google.com/a/macros/testbook.com/s/AKfycbyBShEYbDUbgvuzx9G1CINYM2E9rdF6ZnnWlmANDQQVogwcj_cfyO66-jxwSLlwo6Bh/exec", {
+  await fetch("https://script.google.com/macros/s/AKfycbyBShEYbDUbgvuzx9G1CINYM2E9rdF6ZnnWlmANDQQVogwcj_cfyO66-jxwSLlwo6Bh/exec", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify(data)
@@ -173,4 +173,5 @@ document.getElementById("tbForm").addEventListener("submit", async function(e){
 
 </body>
 </html>
+
 
