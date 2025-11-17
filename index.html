@@ -143,9 +143,10 @@ button:hover {
 // Slot urgency
 const TOTAL = 50;
 let left = TOTAL - Math.floor(Math.random() * 12);
+
 document.getElementById('tb-slots-left').textContent = left;
-document.getElementById('tb-slots-label').textContent = ${left}/${TOTAL} Left;
-document.getElementById('tb-slots-fill').style.width = ((TOTAL-left)/TOTAL) * 100 + "%";
+document.getElementById('tb-slots-label').textContent = `${left}/${TOTAL} Left`;
+document.getElementById('tb-slots-fill').style.width = ((TOTAL - left) / TOTAL) * 100 + "%";
 
 // Submit + Redirect
 document.getElementById("tbForm").addEventListener("submit", async function(e){
@@ -166,12 +167,9 @@ document.getElementById("tbForm").addEventListener("submit", async function(e){
     body: JSON.stringify(data)
   });
 
-  window.top.location.href =
-    "https://testbk.co/1f9wk";
+  window.top.location.href = "https://testbk.co/1f9wk";
 });
 </script>
 
 </body>
 </html>
-
-
